@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MenuApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace MenuApp
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MenuViewModel();
+
         }
     }
 }
