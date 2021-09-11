@@ -3,6 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MenuApp.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="TitleMenuStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="TitleStyle" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="TextColor" Value="DodgerBlue"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="DetailStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BorderColor" Value="#FFFFFF" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="20" />
+                <Setter Property="CornerRadius" Value="5"></Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

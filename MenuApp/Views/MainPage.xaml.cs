@@ -14,6 +14,7 @@ namespace MenuApp
         public MainPage()
         {
             InitializeComponent();
+        
             BindingContext = new MenuViewModel();
 
         }

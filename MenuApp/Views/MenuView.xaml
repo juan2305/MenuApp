@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Frame xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MenuApp.Views.MenuView">
+             x:Class="MenuApp.Views.MenuView"
+    Style="{StaticResource FrameStyle}">
     <StackLayout>
-        <Image Source="{Binding Image}" HeightRequest="50"></Image>
-        <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold"></Label>
-        <Label Text="{Binding Detail}" FontSize="Small"></Label>
+        <Image Source="{Binding Image}" HeightRequest="50" ></Image>
+        <Label Text="{Binding Title}" Style="{StaticResource TitleMenuStyle}"></Label>
+        <Label Text="{Binding Detail}" Style="{StaticResource DetailStyle}"></Label>
     </StackLayout>
   
 </Frame>

@@ -18,12 +18,12 @@ namespace MenuApp.ViewModel
 
         public MenuViewModel()
         {
-            Item1 = new MenuItem("Bread", "bread.png", "Desayuno");
-            Item2 = new MenuItem("Burger", "burger.png", "Cena");
-            Item3 = new MenuItem("Icecream", "icecream.png", "Bebida");
-            Item4 = new MenuItem("Salad", "diet.png", "Cena");
-            Item5 = new MenuItem("Juice", "juice.png", "Bebida");
-            Item6 = new MenuItem("Pizza", "pizza.png", "Almuerzo");
+            Item1 = new MenuItem("Bread", "bread.png", "Breakfast");
+            Item2 = new MenuItem("Burger", "burger.png", "Dinner");
+            Item3 = new MenuItem("IceTea", "icecream.png", "Drinks");
+            Item4 = new MenuItem("Salad", "diet.png", "Dinner");
+            Item5 = new MenuItem("Juice", "juice.png", "Drinks");
+            Item6 = new MenuItem("Pizza", "pizza.png", "Lunch");
 
         }
         public event PropertyChangedEventHandler PropertyChanged;
