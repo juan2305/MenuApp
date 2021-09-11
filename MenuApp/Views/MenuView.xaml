@@ -8,5 +8,5 @@
         <Label Text="{Binding Title}" Style="{StaticResource TitleMenuStyle}"></Label>
         <Label Text="{Binding Detail}" Style="{StaticResource DetailStyle}"></Label>
     </StackLayout>
-  
+    
 </Frame>

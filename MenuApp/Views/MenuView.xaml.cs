@@ -9,12 +9,15 @@ using Xamarin.Forms.Xaml;
 
 namespace MenuApp.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    // [XamlCompilation(XamlCompilationOptions.Compile)]
+  
     public partial class MenuView : Frame
     {
         public MenuView()
         {
             InitializeComponent();
         }
+
     }
+
 }

@@ -3,16 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MenuApp.MainPage"
              xmlns:views="clr-namespace:MenuApp.Views" xmlns:viewmodel="clr-namespace:MenuApp.ViewModel" x:DataType="viewmodel:MenuViewModel">
+    <Frame>
 
-        <Grid Padding="20" RowDefinitions=" Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" ColumnSpacing="10" RowSpacing="10" VerticalOptions="Center">
-        <Label Grid.ColumnSpan="2" HorizontalOptions="Center" Text="Restaurant Menu" Style="{StaticResource TitleStyle}"/>
-            <views:MenuView Grid.Column="0" Grid.Row="1" BindingContext="{Binding Item1}"></views:MenuView>
-            <views:MenuView Grid.Column="0" Grid.Row="2" BindingContext="{Binding Item2}"></views:MenuView>
-            <views:MenuView Grid.Column="0" Grid.Row="3" BindingContext="{Binding Item3}"></views:MenuView>
-            <views:MenuView Grid.Column="1" Grid.Row="1" BindingContext="{Binding Item4}"></views:MenuView>
-            <views:MenuView Grid.Column="1" Grid.Row="2" BindingContext="{Binding Item5}"></views:MenuView>
-            <views:MenuView Grid.Column="1" Grid.Row="3" BindingContext="{Binding Item6}"></views:MenuView>
+        <Grid x:Name="Menu" Padding="20" RowDefinitions=" Auto, Auto, Auto, Auto" ColumnDefinitions="*,*" ColumnSpacing="10" RowSpacing="10" VerticalOptions="Center">
+            <Label Grid.ColumnSpan="2" HorizontalOptions="Center" Text="Restaurant Menu" Style="{StaticResource TitleStyle}"/>
+            <views:MenuView x:Name="ItemMenu1" Grid.Column="0" Grid.Row="1" BindingContext="{Binding Item1}"></views:MenuView>
+            <views:MenuView x:Name="ItemMenu2" Grid.Column="0" Grid.Row="2" BindingContext="{Binding Item2}"></views:MenuView>
+            <views:MenuView x:Name="ItemMenu3" Grid.Column="0" Grid.Row="3" BindingContext="{Binding Item3}"></views:MenuView>
+            <views:MenuView x:Name="ItemMenu4" Grid.Column="1" Grid.Row="1" BindingContext="{Binding Item4}"></views:MenuView>
+            <views:MenuView x:Name="ItemMenu5" Grid.Column="1" Grid.Row="2" BindingContext="{Binding Item5}"></views:MenuView>
+            <views:MenuView x:Name="ItemMenu6" Grid.Column="1" Grid.Row="3" BindingContext="{Binding Item6} "></views:MenuView>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapFrame}" 
+                                      CommandParameter="{x:Reference ItemMenu1}">
+                </TapGestureRecognizer>
+                </Grid.GestureRecognizers>
         </Grid>
+        
+    </Frame>
 
-
+   
 </ContentPage>
